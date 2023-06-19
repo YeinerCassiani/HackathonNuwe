@@ -1,5 +1,9 @@
 # Hackathon
 
+Este proyecto fue realizado como participación en el Danone Hackathon Mexico, utilicé Angular y Typescript para llevar a cabo las funcionalidades y CSS junto a Bootstrap para modelar el diseño deseado.
+________________________________________
+This project was carried out as a participation in the Danone Hackathon Mexico, I used Angular and Typescript to carry out the functionalities and CSS together with Bootstrap to model the desired design.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
 
 ## Development server
