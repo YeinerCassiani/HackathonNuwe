@@ -1,0 +1,134 @@
+section{
+    background-color: #e8f3ff;
+    height: 90vh;
+}
+
+.primeraSeccion{
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    background-color: #e8f3ff;
+    background-image: url('../../../assets/img/onda.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.infoPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.infoPrincipal h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(10,19,92);
+}
+
+.seccionPalabra{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 9vw;
+    font-weight: bold;
+    background: linear-gradient(0deg, rgba(179,211,255,1) 0%, rgba(47,89,255,1) 50%, rgba(10,19,92,1) 100%);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 10px;
+    line-height: 80%; 
+    padding-bottom: 20px;
+}
+
+.carpeta {
+    display: flex;
+    width: 80%;
+    height: 40%;
+    background-color: #0B125C;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative;
+    padding-right: 0;
+}
+  
+.solapa {
+    width: 7%;
+    height: 6%;
+    background-color: #0B125C;
+    position: absolute;
+    bottom: 31%;
+    right: 20%;
+    border-radius: 10px 10px 0 0;
+    transform: rotate(-45deg);
+    z-index: 1;
+  }  
+  .solapa2 {
+    width: 15%;
+    height: 199px;
+    background-color: #0B125C;
+    position: absolute;
+    bottom: 13%;
+    right: 8.7%;
+    border-radius: 10px 10px 10px 0;
+    transform: rotate(270deg);
+  }
+.seccionContenido{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagenPrincipal{
+    position: relative;
+    right: -10.2%;
+    top: -7.8%;
+}
+
+.imagenPrincipal img{
+    width: 90%;
+}
+
+.contenido{
+    padding-left: 20px;
+}
+
+.contenido h4{
+    margin: 20px 0 30px 0;
+    font-weight: 300;
+    color: aliceblue;
+}
+
+.btn{
+  border: solid 1px aliceblue;
+  border-radius: 5px;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 5%;
+}
+
+.btn a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.btn a:hover{
+    color: #0B125C;
+}
+
+.btn:hover{
+  background-color: aliceblue;
+}

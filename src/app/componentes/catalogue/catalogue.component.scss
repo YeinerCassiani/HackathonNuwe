@@ -1,0 +1,133 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+ 
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+  
+.button-white {
+    padding: 5px 10px 10px 10px;
+    background-color: white;
+    border: 1px solid #10249F;
+    height: 40px;
+    border-radius: 5px;
+    color: #10249F;
+    font-weight: bold;
+    margin-right: 20px;
+}
+  
+.button-blue {
+  padding: 5px 10px 10px 10px;
+  background-color: #10249F;
+  border: 1px solid white;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-blue a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.button-blue:hover, .button-white:hover{
+  opacity: 0.6;
+}
+  
+  
+.search-bar {
+    width: 60%;
+    padding: 10px;
+}
+
+.input-group-text img{
+  width: 85%;
+  margin: auto;
+}
+
+.input-group-text{
+  width: 4%;
+}
+  
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 10px;
+    padding: 10px;
+}
+  
+.product {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.filtros{
+  grid-area: 1 / 4 / 2 / 5;
+}
+  
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid-item h3{
+  font-size: 100%;
+  color: #0a135c;
+  font-weight: bold;
+}
+
+.grid-item img{
+  max-height: 167px;
+}
+
+.add{
+  filter: invert(1);
+}
+
+.add:hover{
+  filter: invert(0.5);
+}
+
+.filtros h4{
+  font-size: 20px;
+  margin: 20px;
+  font-weight: bold;
+  color: #10249F;
+}
+
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  width: 80%;
+  border: 1px solid #0a135c;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.filter-container select{
+  color: #10249F;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #0a135c;
+}

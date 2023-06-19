@@ -1,0 +1,124 @@
+nav{
+    padding: 0;
+}
+
+.userMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5vh;
+}
+
+.userMenu img{
+    height: 50%;
+}
+
+.userMenu a{
+    text-decoration: none;
+    padding: 0 80px 0 10px;
+    font-weight: bold;
+}
+
+.navBar{
+    background-color: #E8F3FF;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoDanone{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.logoDanone a{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.logoDanone img{
+    height: 70%;
+}
+
+.listaMenu{
+    display: flex;
+    align-items: center;
+}
+
+.listaMenu li{
+    display:inline;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.listaMenu a{
+    font-weight: bold;
+    color: #0B125C;
+    text-decoration: none;
+}
+
+.listaMenu a:hover{
+    padding: 10px;
+    background-color: #475fb52f;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 5%;
+}
+
+.menu a{
+    display: flex;
+    align-items: center;
+    height: 30%;
+}
+
+.menu img{
+    height: 100%;
+}
+
+.inferiorBar{
+    background-color: #D5E8FF;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.listaInferiorMenu{
+    display: flex;
+    align-items: center;
+}
+
+.listaInferiorMenu li{
+    display:inline;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.listaInferiorMenu a{
+    font-weight: 300;
+    color: #475FB5;
+    text-decoration: none;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 5%;
+}
+
+.redes a{
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.redes img{
+    height: 70%;
+}

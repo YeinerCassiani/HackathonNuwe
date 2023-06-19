@@ -1,0 +1,50 @@
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="button-white" (click)="limpiarArray()">Show all</button>
+      <button class="button-blue"><a href="/calorias">According to my caloric limit</a></button>
+    </div>
+    <div>
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping"><img class="lupa" src="assets/iconos/lupa.svg" alt="Lupa"></span>
+        <input type="text" class="form-control" placeholder="Search product..." [(ngModel)]="searchTerm" (keyup)="filtrarProductos()">
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <div class="grid-container">
+            <div class="grid-item" *ngFor="let item of productosFiltrados; let i = index">
+                <img [src]="item.imagen" alt="Imagen del objeto">
+                <h3>{{ item.nombre }}</h3>
+                <p>{{ item.kcal + " / 100"}} kcal</p>
+                <a href="/catalogo"><img class="add" src="assets/iconos/add.svg" alt="addButton" /></a>
+            </div>
+          </div>    
+        </div>
+        <div class="filtros card">
+          <h4>Filters</h4>
+          <div class="filter-container">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option selected>Brands</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option selected>Characteristics</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option selected>Specialty</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+

@@ -1,0 +1,125 @@
+<body>
+  <div class="seccion">
+    <h2>Welcome to your diary!</h2>
+    <div class="row px-5 contenedor">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <div class="encabezado">
+              <h5 class="fw-bold">Your maximum kcal limit</h5>
+            </div>
+            <div class="pt-2 text-center tarjeta">
+              <div>
+                <div class="d-flex justify-content-evenly stats">
+                  <div class="consumed">
+                    <h4>1.291</h4>
+                    <h4>Consumed</h4>
+                  </div>
+                  <div class="remaining">
+                    <h4 class="fw-bold">892</h4>
+                    <h4>Remaining</h4>
+                  </div>
+                  <div class="burned">
+                    <h4>244</h4>
+                    <h4>Burned</h4>
+                  </div>
+                </div>
+                <div class="topicos">
+                    <div class="topico">
+                        <div class="d-flex">
+                            <div class="px-3">
+                                <h4 class="fw-bold">Breakfast</h4>
+                                <h4>200 kcal</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn botonPlus">
+                                <a href="/calorias"
+                                ><img src="assets/iconos/lapiz.svg" alt="plus" />
+                                COMPLETE INFORMATION</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                    <div class="topico">
+                        <div class="d-flex">
+                            <div class="px-3">
+                                <h4 class="fw-bold">Lunch</h4>
+                                <h4>350 kcal</h4>
+                            </div>
+                        </div>
+                        <div>
+                        <button type="button" class="btn botonPlus">
+                            <a href="/calorias"
+                            ><img src="assets/iconos/lapiz.svg" alt="plus" />
+                            COMPLETE INFORMATION</a
+                            >
+                        </button>
+                        </div>
+                    </div>
+                    <div class="topico">
+                        <div class="d-flex">
+                        <div class="px-3">
+                            <h4 class="fw-bold">Dinner</h4>
+                            <h4>250 kcal</h4>
+                        </div>
+                        </div>
+                        <div>
+                        <button type="button" class="btn botonPlus">
+                            <a href="/calorias"
+                            ><img src="assets/iconos/lapiz.svg" alt="plus" />
+                            COMPLETE INFORMATION</a
+                            >
+                        </button>
+                        </div>
+                    </div>
+                    <div class="topico">
+                        <div class="d-flex">
+                            <div class="px-3">
+                                <h4 class="fw-bold">Snacks</h4>
+                                <h4>250 kcal</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn botonPlus">
+                                <a href="/calorias"
+                                ><img src="assets/iconos/lapiz.svg" alt="plus" />
+                                COMPLETE INFORMATION</a
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 productosContainer">
+        <div class="card">
+          <div class="card-body">
+            <div class="encabezado">
+                <h5 class="fw-bold">Your products of interest in terms of ecological footprint</h5>
+            </div>
+            <div class="productos">
+                <div class="grid-container">
+                    <div class="grid-item" *ngFor="let item of productos; let i = index">
+                        <img [src]="item.imagen" alt="Imagen del objeto">
+                        <h3>{{ item.nombre }}</h3>
+                        <p>{{ item.kcal + " / 100"}} kcal</p>
+                        <a href="/catalogo"><img class="add" src="assets/iconos/add.svg" alt="addButton" /></a>
+                    </div>
+                </div>          
+            </div>
+            <div class="derecha">
+                <a href="/catalogo">
+                    <h3>Products you may be interested in</h3>
+                    <img src="assets/iconos/flecha.svg" alt="Flecha">
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
